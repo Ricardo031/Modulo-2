@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Mascotas</title>
 </head>
+
 <body>
     <header>
         <h1>Mis Mascotas</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="mascota.html">Mascotas</a></li>
+            <ul class="navigation">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="mascota.html">Mascotas</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <article>
-            <img src="img/conejo.jpg" alt="conejo">
-            <div>
-                <h2>Conejo</h2>
-                <p>Este es un conejo muy juguetón.</p>
-            </div>
-        </article>
+    <section class="porta">
+        <h2>Mis Mascotas</h2>
+        <div class="mascota">
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/conejo.jpg" alt="conejo">
+                </div>
+                <div class="content-card">
+                    <h2 class="animal-name">Conejo</h2>
+                    <p class="paragraph">Este es un conejo muy juguetón. se llama esponjoso y tiene 6 meses de edad.</p>
+                </div>
+            </article>
 
-        <article>
-            <img src="img/Pericos1.webp" alt="perico">
-            <div>
-                <h2>Perico</h2>
-                <p>Este es un perico muy caminador.</p>
-            </div>
-        </article>
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/Pericos1.webp" alt="perico">
+                </div>
+                <div class="content-card">
+                    <h2 class="animal-name">Pericos</h2>
+                    <p class="paragraph">Estos son pericos muy coloridos. se llaman Aurora y Sol y tienen 2 años de edad.</p>
+                </div>
+            </article>
 
-        <article>
-            <img src="img/perro.avif" alt="perro">
-            <div>
-                <h2>Perro</h2>
-                <p>Este es un perro muy leal.</p>
-            </div>
-        </article>
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/perro.avif" alt="perro">
+                </div>
+                <div class="content-card">
+                    <h2 class="animal-name">Perro</h2>
+                    <p class="paragraph">Este es un perro muy leal. se llama Max y tiene 1 año de edad. puedes jugar con el y acariciarlo </p>
+                </div>
+            </article>
+        </div>
     </section>
-    <div>
-        <a href="index.html">Volver a la página principal</a>
-    </div>
+    <div class="content-button">
+            <a class="btn" href="index.html">Volver a la página principal</a>
+        </div>
 </body>
+
 </html>
