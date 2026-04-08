@@ -44,6 +44,9 @@ header {
 
 /*% Cuerpo de la pagina  */
 .porta {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2px;
     padding: 5px 0 20px 30px;
 }
 
@@ -182,57 +185,4 @@ a {
 .btn:hover {
     background-color: #0056b3;
     color: #fff;
-}
-
-/*% Mascotas  */
-
-.mascota {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 20px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    height: auto;
-}
-
-.card-image {
-    width: 100%;
-    height: fit-content;
-}
-
-img {
-    width: 100%;
-    height: 260px;
-    object-fit: fill;
-    border-radius: 8px 8px 0 0;
-}
-
-.content-card {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-}
-
-.animal-name {
-    color: #313131;
-    font-size: 24px;
-    margin: auto;
-}
-
-.paragraph {
-    color: #3a3a3a;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 400;
-    margin: 10px 0 20px 0;
 }
