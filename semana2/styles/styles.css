@@ -18,6 +18,7 @@ header {
     background: linear-gradient(#0e0e0e, #555);
     color: white;
     align-items: center;
+    justify-content: center;
 }
 
 .navigation {
@@ -45,6 +46,7 @@ header {
 .porta {
     padding: 5px 0 20px 30px;
 }
+
 
 .subtitle {
     color: #313131;
@@ -190,6 +192,7 @@ a {
     align-items: start;
     gap: 20px;
 }
+
 .card {
     display: flex;
     flex-direction: column;
