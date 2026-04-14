@@ -11,6 +11,11 @@ body {
     background: #f1f1f1;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin: 1.25rem 0;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -24,14 +29,15 @@ header {
     text-decoration: none;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .nav-item a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 2px;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.125rem;
+    font-size: 1.125rem;
     font-weight: 600;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -45,58 +51,59 @@ header {
 .porta {
     display: flex;
     flex-direction: column;
-
-    gap: 2px;
-    padding: 5px 20px 20px 20px;
+    gap: 0.125rem;
+    padding: 0.3125rem 1.25rem 1.25rem 1.25rem;
 }
 
 .mascota {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* ya con este grid puedo hacer que tengan un valor minimo por pantalla */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* ya con este grid puedo hacer que tengan un valor minimo por pantalla */
     justify-items: start;
     justify-content: space-evenly;
+    grid-auto-rows: 320px;
     gap: 20px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    height: 100%;
+    gap: 0.625rem;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0.625rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: auto;
-}
-
-.card-image {
-    width: 100%;
-    height: fit-content;
 }
 
 img {
     width: 100%;
-    height: 260px;
-    object-fit: fill;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
 .content-card {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+
+    padding: 0 1.125rem;
 }
 
 .animal-name {
     color: #313131;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: auto;
 }
 
 .paragraph {
     color: #3a3a3a;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
     font-weight: 400;
     margin: 10px 0 20px 0;
@@ -135,7 +142,7 @@ img {
     .porta {
         padding: 5px 20px 20px 20px;
     }
-    
+
     .mascota {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
@@ -148,10 +155,10 @@ img {
 
 @media (max-width: 425px) {
 
-    
+
 
     .porta {
-        padding: 5px 10px 20px ;
+        padding: 5px 10px 20px;
     }
 
     .mascota {
@@ -167,6 +174,3 @@ img {
         margin-bottom: 10px;
     }
 }
-
-
-
