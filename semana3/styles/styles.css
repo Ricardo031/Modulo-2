@@ -29,6 +29,12 @@ header {
     justify-content: center;
 }
 
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .navigation {
     margin: 0;
     padding: 0 0 0.8rem;
@@ -168,7 +174,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .btn {
@@ -176,7 +182,9 @@ header {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
+    border: none;
     text-decoration: none;
+    cursor: pointer;
     border-radius: 4px;
     font-size: 1.125rem;
     font-weight: 600;
@@ -186,6 +194,19 @@ header {
 .btn:hover {
     background-color: #0056b3;
     color: #fff;
+}
+
+.intent {
+    flex-direction: column;
+    align-items: center;
+}
+
+.show {
+    width: fit-content;
+}
+
+.oculto {
+    display: none;
 }
 
 
@@ -208,6 +229,7 @@ header {
 }
 
 .test-app {
+    position: relative;
     font-size: 1.2rem;
     color: #333;
     background-color: #fff45daf;
@@ -244,5 +266,9 @@ header {
 
     .project-title {
         font-size: 2rem;
+    }
+
+    .test-app {
+        margin-left: 0;
     }
 }
